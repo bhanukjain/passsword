@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password_Generator</title>
+        <link rel="stylesheet" href="output.css">
+    </head>
+    <body class=" bg-[#21214efe]">
+        <div class=" my-5 text-xl border  sm:border mx-32  border-white">
+        <h1 class=" flex justify-center mt-10 sm:text-5xl mb-9 text-white ">
+            Password Generator
+        </h1>
+    
+        <span id="result" class=" bg-white flex justify-center my-5 text-center font-semibold    text-gray-700 rounded-md text-xs sm:text-xl mx-14 py-2">Click on generate button</span>
+        <div class=" flex justify-center gap-5 my-5 sm:my-10 ">
+           <button id="generate" type="button" class=" bg-violet-700 text-xs px-3 py-2 text-white rounded-md sm:text-3xl ">Generate</button>
+           <button type="button" id="clipboard" class=" bg-violet-700 text-xs px-3 py-2 text-white rounded-md sm:text-3xl">Copy</button>
+        </div>
+        <div class="flex justify-center content-center items-center gap-1 sm: text-2xl">
+            <label for="length" class="   my-3 text-xs text-white sm:text-2xl">Length</label>
+            <input type="number" class="mx-1 text-base sm:ml-5 h-7 w-10" name="" id="length">
+        </div>
+        <div class="flex justify-center content-center gap-1 sm: text-2xl">
+            <label for="uppercase" class="   my-3 text-xs text-white sm:text-2xl">Include Uppercase</label>
+            <input type="checkbox" class="mx-1 sm:ml-5" name="" id="uppercase">
+        </div>
+        <div class="flex justify-center content-center gap-1 sm: text-2xl">
+            <label for="lowercase" class="   my-3 text-xs text-white sm:text-2xl">Include Lowercase</label>
+            <input type="checkbox" class="mx-1 sm:ml-5" name="" id="lowercase">
+        </div>
+        <div class="flex justify-center content-center gap-1 sm: text-2xl">
+            <label for="numbers" class="   my-3 text-xs text-white sm:text-2xl">Include Number</label>
+            <input type="checkbox" class="mx-1 sm:ml-10" name="" id="numbers">
+        </div>
+        <div class="flex justify-center content-center gap-1 sm: text-2xl">
+            <label for="symbols" class="   my-3 text-xs text-white sm:text-2xl">Include Symbol</label>
+            <input type="checkbox" class="mx-1 sm:ml-12" name="" id="symbols">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    </body>
+</html>
